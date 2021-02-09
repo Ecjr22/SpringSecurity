@@ -89,7 +89,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
     // I am not using this anymore but because of the 'remember-me' field is being used above in the configure method (HttpSecurity)
     // spring boot won't work because its looking UserDetailsService.
     // The FakeApplicationUserDaoService has the in-memory users I am using for this project.
-    // **** seems to be working now weird ***
+    // **** seems to be working when i run the build with UserDetailService method once uncommented then I can comment it out for the rest of the builds ***
 //    @Override
 //    @Bean
 //    protected UserDetailsService userDetailsService() {
@@ -119,6 +119,5 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
 //                lindaUser,
 //                tomUser
 //        );
-//        return null;
 //    }
 }
